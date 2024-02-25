@@ -111,7 +111,7 @@ module.exports = {
         
       
           const {modifiedCount} = await User.updateOne({id:studentId},{name,middlename,lastname,result,id,schoolId,schoolname,total,average,percentile:average},{runValidators:true})
-          if(!modifiedCount){
+          if(!modifiedCount){  //modifiedCount>0
             return res.status(400)
                       .json({error:true,message:'data not complete'})
           }

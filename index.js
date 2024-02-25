@@ -17,4 +17,4 @@ const adminRoute = require('./user/admin/routes')
 app.use(adminRoute)
 app.use(userRoute)
 
-app.listen(2300,'10.14.30.240',(e)=>console.log('listening'))
+app.listen(2300,(e)=>console.log('listening'))
